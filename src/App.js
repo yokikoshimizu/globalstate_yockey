@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route exact path='/' component={TopPage} />
+        <Route exact path='/' element={<TopPage />} />
       </Routes>
     </Router>
   );
