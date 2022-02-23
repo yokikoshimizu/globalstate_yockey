@@ -5,11 +5,12 @@ import TopPage from './pages/TopPage';
 import Header from './components/Header';
 
 function App() {
+  console.log('test')
   return (
     <Router>
       <Header />
       <Routes>
-        <Route exact path='/' component={TopPage} />
+        <Route exact path='/' element={<TopPage />} />
       </Routes>
     </Router>
   );
