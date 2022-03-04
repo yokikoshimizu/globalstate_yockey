@@ -10,7 +10,7 @@ const TopPage = () => {
       fetchGetData().then(res => {
         setGlobalState({
           type: GET_DATA,
-          data: res.data
+          data: res.data.slice(0,5)
         })
       })
     }, [])
