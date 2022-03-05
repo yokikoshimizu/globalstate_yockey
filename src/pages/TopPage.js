@@ -8,6 +8,7 @@ const TopPage = () => {
   const {globalState, setGlobalState} = useContext(Store)
     useEffect(() => {
       fetchGetData().then(res => {
+        console.log(res.data)
         setGlobalState({
           type: GET_DATA,
           data: res.data.slice(0,5)
