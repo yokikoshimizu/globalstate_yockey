@@ -6,7 +6,7 @@ import SecondPage from './pages/SecondPage';
 import Header from './components/Header';
 
 function App() {
-  console.log('test')
+  console.log('test1')
   return (
     <Router>
       <Header />
